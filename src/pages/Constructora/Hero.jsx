@@ -15,10 +15,10 @@ export default function HeroConstructora() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-gray-900/20" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 w-full">
         <div className="max-w-2xl">
           <motion.div
-            className="flex items-center gap-3 mb-5"
+            className="flex items-center gap-3 mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease }}
@@ -26,13 +26,13 @@ export default function HeroConstructora() {
             <img
               src={ProjectHabitatLogo}
               alt="Grupo Hábitat Constructora"
-              className="w-16 h-16 rounded-full object-cover shadow-lg border-2 border-white/20"
+              className="w-10 h-10 sm:w-14 sm:h-14 rounded-full object-cover shadow-lg border-2 border-white/20"
             />
-            <span className="text-white/70 font-semibold text-sm uppercase tracking-wider">Grupo Hábitat · Constructora</span>
+            <span className="text-white/70 font-semibold text-xs sm:text-sm uppercase tracking-wider">Grupo Hábitat · Constructora</span>
           </motion.div>
 
           <motion.h1
-            className="text-5xl sm:text-6xl font-extrabold text-white leading-tight mb-5"
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease }}
@@ -42,7 +42,7 @@ export default function HeroConstructora() {
           </motion.h1>
 
           <motion.p
-            className="text-white/75 text-lg leading-relaxed mb-8 max-w-lg"
+            className="text-white/75 text-base sm:text-lg leading-relaxed mb-7 max-w-lg"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease }}
