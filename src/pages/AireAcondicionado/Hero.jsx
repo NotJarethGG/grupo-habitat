@@ -5,7 +5,7 @@ const ease = [0.25, 0.1, 0.25, 1]
 
 export default function HeroAire() {
   return (
-    <section className="relative min-h-screen sm:min-h-[70vh] flex items-end overflow-hidden">
+    <section className="relative min-h-[65vh] sm:min-h-[70vh] flex items-end overflow-hidden">
       <motion.div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1600&q=80')" }}
