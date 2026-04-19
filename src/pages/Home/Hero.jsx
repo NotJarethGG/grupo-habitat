@@ -3,15 +3,9 @@ import { motion } from 'framer-motion'
 
 const ease = [0.25, 0.1, 0.25, 1]
 
-const stats = [
-  { value: '18+', label: 'Años de experiencia' },
-  { value: '200+', label: 'Proyectos completados' },
-  { value: '7', label: 'Provincias con cobertura' },
-]
-
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-between overflow-hidden bg-white">
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-white">
 
       {/* Background image — full on mobile, right half on desktop */}
       <motion.div
@@ -73,7 +67,7 @@ export default function Hero() {
 
           {/* Division cards */}
           <motion.div
-            className="flex flex-col sm:flex-row gap-3"
+            className="flex flex-col gap-3"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.65, ease }}
@@ -120,24 +114,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Stats bar */}
-      <motion.div
-        className="relative z-10 w-full border-t border-gray-200 bg-white"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1, ease }}
-      >
-        <div className="w-full lg:w-[54%] px-6 sm:px-12 lg:px-16 xl:px-20">
-          <div className="flex items-center divide-x divide-gray-200 py-5">
-            {stats.map((s, i) => (
-              <div key={s.label} className={`flex items-baseline gap-2 ${i === 0 ? 'pr-6' : 'px-6'}`}>
-                <span className="text-2xl font-black text-gray-900">{s.value}</span>
-                <span className="text-xs text-gray-500 font-medium">{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </motion.div>
     </section>
   )
 }

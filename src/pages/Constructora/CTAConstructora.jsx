@@ -45,20 +45,19 @@ export default function CTAConstructora() {
   }
 
   return (
-    <section id="contacto-constructora" className="py-20 bg-gray-900">
+    <section id="contacto-constructora" className="py-20 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left */}
           <motion.div
-            className="text-white"
             variants={fadeLeft}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: '-80px' }}
           >
-            <span className="text-white/50 text-sm font-semibold uppercase tracking-widest">Hagámoslo realidad</span>
-            <h2 className="mt-2 text-4xl font-extrabold mb-5">Solicite su Cotización</h2>
-            <p className="text-white/65 leading-relaxed mb-8">
+            <span className="text-gray-400 text-sm font-semibold uppercase tracking-widest">Hagámoslo realidad</span>
+            <h2 className="mt-2 text-4xl font-extrabold text-gray-900 mb-5">Solicite su Cotización</h2>
+            <p className="text-gray-600 leading-relaxed mb-8">
               Cuéntenos sobre su proyecto y le enviaremos una cotización detallada sin costo. Nuestro equipo técnico le contactará en menos de 24 horas hábiles.
             </p>
             <motion.div
@@ -71,8 +70,8 @@ export default function CTAConstructora() {
                 'Visita técnica a su terreno o propiedad',
                 'Propuesta personalizada y detallada',
               ].map((item) => (
-                <motion.div key={item} variants={fadeUp} className="flex items-center gap-3 text-white/65 text-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white/40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <motion.div key={item} variants={fadeUp} className="flex items-center gap-3 text-gray-600 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   {item}
@@ -83,7 +82,7 @@ export default function CTAConstructora() {
 
           {/* Form */}
           <motion.div
-            className="bg-white rounded-2xl p-8 shadow-xl"
+            className="bg-gray-50 rounded-2xl p-8 border border-gray-100"
             variants={fadeRight}
             initial="hidden"
             whileInView="show"

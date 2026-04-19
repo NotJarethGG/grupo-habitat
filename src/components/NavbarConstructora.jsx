@@ -100,6 +100,13 @@ export default function NavbarConstructora() {
 
             <div className="w-px h-4 bg-gray-200 mx-1" />
 
+            <Link
+              to="/aire-acondicionado"
+              className="text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors px-3 py-2"
+            >
+              Aire Acondicionado
+            </Link>
+
             <a
               href="#contacto-constructora"
               className="bg-gray-900 hover:bg-gray-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors ml-1"
@@ -151,6 +158,13 @@ export default function NavbarConstructora() {
               {link.label}
             </a>
           ))}
+          <Link
+            to="/aire-acondicionado"
+            onClick={() => setMenuOpen(false)}
+            className="text-gray-600 hover:text-gray-900 text-sm font-medium"
+          >
+            Aire Acondicionado
+          </Link>
           <a
             href="#contacto-constructora"
             onClick={() => setMenuOpen(false)}

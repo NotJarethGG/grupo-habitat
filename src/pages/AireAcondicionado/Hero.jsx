@@ -5,17 +5,17 @@ const ease = [0.25, 0.1, 0.25, 1]
 
 export default function HeroAire() {
   return (
-    <section className="relative min-h-[65vh] sm:min-h-[70vh] flex items-end overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <motion.div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1600&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80')" }}
         initial={{ scale: 1.08 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.8, ease }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-gray-900/20" />
+      <div className="absolute inset-0 bg-gray-900/55" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
         <div className="max-w-2xl">
           <motion.div
             className="flex items-center gap-3 mb-4"
